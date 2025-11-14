@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: aliceblue;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 0.5rem;
+  background: powderblue;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  margin: 0 24px;
+}
+
+article,
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+  background: powderblue;
+}
+
+tbody tr:hover {
+  cursor: pointer;
+  background: purple;
+}
+
+td {
+  padding: 1ch;
+}
+
+.recipelist__p {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.table__description {
+  width: 500px;
+}
+
+img {
+  width: 50%;
+  margin: auto;
+}
+
+.recipe-details button {
+  width: 100px;
+  margin: auto;
+}
