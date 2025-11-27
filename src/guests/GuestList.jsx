@@ -5,7 +5,7 @@ export default function GuestList({ setGuestId }) {
   const [ guest, setGuest] = useState([]);
 
   useEffect(() => {
-    const fetchRecipes = async () => {
+    const fetchGuests = async () => {
       const data = await getGuest();
       setGuest(data);
     };

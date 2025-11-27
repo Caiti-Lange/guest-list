@@ -1,6 +1,9 @@
 import { API } from "../constants";
 
+
+
 export async function getGuest() {
+  console.log(API);
   try {
     const response = await fetch(API);
     const result = await response.json();
@@ -14,6 +17,7 @@ export async function getGuest() {
     console.error(error);
     return [];
   }
+
 }
 
 export async function getGuestById(id) {
